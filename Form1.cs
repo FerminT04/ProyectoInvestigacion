@@ -29,7 +29,7 @@ namespace ProyectoInvestigacion
             double i, centinela = 1, acumulador = 0, sueldo, total = 0;
             if (String.IsNullOrEmpty(txtCantidad.Text))
             {
-                MessageBox.Show("No puede dejar vacío el campo o nulo", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No puede dejar vacío el campo o nulo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             i = Convert.ToDouble(txtEmpleados.Text);
@@ -38,15 +38,15 @@ namespace ProyectoInvestigacion
 
                 while (centinela <= i)
                 {
-                sueldo =  Convert.ToDouble(Microsoft.VisualBasic.Interaction.InputBox("Ingrese el Sueldo del empleado: " + centinela, "Boleta de Pagos"));
- //validamos que no se ingrese un sueldo en blanco
+                    sueldo = Convert.ToDouble(Microsoft.VisualBasic.Interaction.InputBox("Ingrese el Sueldo del empleado: " + centinela, "Boleta de Pagos"));
+                    //validamos que no se ingrese un sueldo en blanco
 
                     validarNegativo(sueldo, centinela);
                     //Validamos que el sueldo a ingresar debe estar en el rango solicitado
                     while (sueldo <= 300 || sueldo >= 500)
                     {
-                       sueldo = Convert.ToDouble(Microsoft.VisualBasic.Interaction.InputBox("El sueldo debe ser mayor a $300 y menor a $500, Ingrese el Sueldo del empleado: " + centinela, "Boleta de Pagos"));
-                     }
+                        sueldo = Convert.ToDouble(Microsoft.VisualBasic.Interaction.InputBox("El sueldo debe ser mayor a $300 y menor a $500, Ingrese el Sueldo del empleado: " + centinela, "Boleta de Pagos"));
+                    }
                     total = total + sueldo;
                     acumulador++;
                     centinela++;
@@ -61,9 +61,20 @@ namespace ProyectoInvestigacion
 
         }
 
-            private void txtEmpleados_TextChanged(object sender, EventArgs e)
-            {
+        private void txtEmpleados_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void txtEmpleados_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Ingrese Solo Numeros Mayores a 0", "Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Handled = true;
+                return;
             }
+        }
     }
 }
