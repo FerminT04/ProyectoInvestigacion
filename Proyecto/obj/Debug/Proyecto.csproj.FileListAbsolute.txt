@@ -1,0 +1,10 @@
+C:\Users\alang\Downloads\proyecto\proycto\ProyectoInvestigacion\Proyecto\bin\Debug\Proyecto.exe.config
+C:\Users\alang\Downloads\proyecto\proycto\ProyectoInvestigacion\Proyecto\bin\Debug\Proyecto.exe
+C:\Users\alang\Downloads\proyecto\proycto\ProyectoInvestigacion\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\alang\Downloads\proyecto\proycto\ProyectoInvestigacion\Proyecto\obj\Debug\Proyecto.csproj.AssemblyReference.cache
+C:\Users\alang\Downloads\proyecto\proycto\ProyectoInvestigacion\Proyecto\obj\Debug\Proyecto.Form1.resources
+C:\Users\alang\Downloads\proyecto\proycto\ProyectoInvestigacion\Proyecto\obj\Debug\Proyecto.Properties.Resources.resources
+C:\Users\alang\Downloads\proyecto\proycto\ProyectoInvestigacion\Proyecto\obj\Debug\Proyecto.csproj.GenerateResource.cache
+C:\Users\alang\Downloads\proyecto\proycto\ProyectoInvestigacion\Proyecto\obj\Debug\Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\alang\Downloads\proyecto\proycto\ProyectoInvestigacion\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\alang\Downloads\proyecto\proycto\ProyectoInvestigacion\Proyecto\obj\Debug\Proyecto.pdb
